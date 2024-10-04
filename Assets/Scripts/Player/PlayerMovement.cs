@@ -44,11 +44,6 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F))
-        {
-            Debug.Log("Delete Flag");
-            RemoveLastPointInQueue();
-        }
         if (!isMoving && Input.touchCount > 0)
         {
             Touch touch = Input.GetTouch(0);
@@ -59,12 +54,12 @@ public class PlayerMovement : MonoBehaviour
                 AddClickPosition();
             }
         }
-        if (Input.GetKeyDown(KeyCode.Space) && targetsQueue.Count > 0)
+        if (targetsQueue.Count > 0)
         {
             currentTarget = targetsQueue.Dequeue();
             isMoving = true;
         }
-        if (Input.GetKeyDown(KeyCode.R)) RespawnToLastTarget();
+
     }
 
     void FixedUpdate()
@@ -91,7 +86,6 @@ public class PlayerMovement : MonoBehaviour
     {
         Vector2 direction = ((Vector2)target - rb.position).normalized;
         rb.AddForce(direction * speed);
-
         if (Vector2.Distance(rb.position, target) <= 0.1f)
         {
             rb.velocity = Vector2.zero;
