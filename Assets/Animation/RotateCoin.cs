@@ -5,12 +5,11 @@ using DG.Tweening;
 
 public class RotateCoin : MonoBehaviour
 {
-    [SerializeField] private Vector3 rotationAmount = new Vector3(0, 360, 0); // Обертання навколо осі Y
-    [SerializeField] private float rotationDuration = 2f; // Тривалість обертання
+    [SerializeField] private Vector3 rotationAmount = new Vector3(0, 360, 0); 
+    [SerializeField] private float rotationDuration = 2f; 
 
     private void Start()
     {
-        // Запускаємо безперервну анімацію обертання навколо осі Y
         RotateAroundY();
     }
 

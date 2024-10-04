@@ -4,27 +4,25 @@ using DG.Tweening;
 
 public class LogoScaler : MonoBehaviour
 {
-    [SerializeField] private TextMeshProUGUI _text; // Посилання на TextMeshProUGUI
-    [SerializeField] private float _scaleAmount = 1.5f; // Коефіцієнт масштабування
-    [SerializeField] private float _duration = 0.5f; // Тривалість анімації
+    [SerializeField] private TextMeshProUGUI _text; 
+    [SerializeField] private float _scaleAmount = 1.5f; 
+    [SerializeField] private float _duration = 0.5f; 
 
-    private Vector3 _originalScale; // Зберігаємо початковий розмір тексту
+    private Vector3 _originalScale; 
 
     void Start()
     {
-        _originalScale = _text.transform.localScale; // Зберігаємо початковий розмір
-        ScaleText(); // Запускаємо анімацію
+        _originalScale = _text.transform.localScale; 
+        ScaleText(); 
     }
 
     private void ScaleText()
     {
-        // Анімуємо масштаб тексту
         _text.transform.DOScale(_originalScale * _scaleAmount, _duration)
             .OnComplete(() => 
             {
-                // Повертаємося до початкового розміру після завершення анімації
                 _text.transform.DOScale(_originalScale, _duration)
-                    .OnComplete(ScaleText); // Викликаємо ScaleText для повторення анімації
+                    .OnComplete(ScaleText); 
             });
     }
 }
