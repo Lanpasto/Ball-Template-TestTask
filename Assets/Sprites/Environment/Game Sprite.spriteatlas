@@ -1,0 +1,101 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Game Sprite
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: Android
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 50
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_IgnorePlatformSupport: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 1
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 7d74d30a32d7f984a92003fa68f5d18d, type: 3}
+    - {fileID: 102900000, guid: 10bb17024b39efc4aaefed6b5e2fdff4, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+    packedSpriteRenderDataKeys:
+    - 760a142044cfc044d984979af9d246d7: 21300000
+    - 04b1e7e05a437d5428d98a59b08e93c4: 21300000
+    - 0fd6f8f0180303b4197603166643d819: 21300000
+    - ba8db3e5dff34484ebfcbc1e60520a92: 21300000
+    - 582eccb6699391543a596e468b56d68c: 21300000
+    - 3714a3f91c4feb04a82e966e57f3584e: 21300000
+    - 22de71caba2944344a3b21753724e338: 21300000
+    - e194ed1ba02dbe340b9e1967287dcffc: 21300000
+    - 9a03924cfa2bc044eb0636711b68053e: 21300000
+    - e58929ec602fe764eba613c6b2e28fd5: 21300000
+    - ffcfa10dc1e44cf41a5d372a2cdc7d0c: 21300000
+    - 6adef50dc3a1a854891ff7cafb4eb8e1: 21300000
+    - 9554135ec8a4c364681abdd559881e0e: 21300000
+    - 2299c9bff4e156147a72cf00ef8cc023: 21300000
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 760a142044cfc044d984979af9d246d7, type: 3}
+  - {fileID: 21300000, guid: 04b1e7e05a437d5428d98a59b08e93c4, type: 3}
+  - {fileID: 21300000, guid: 0fd6f8f0180303b4197603166643d819, type: 3}
+  - {fileID: 21300000, guid: ba8db3e5dff34484ebfcbc1e60520a92, type: 3}
+  - {fileID: 21300000, guid: 582eccb6699391543a596e468b56d68c, type: 3}
+  - {fileID: 21300000, guid: 3714a3f91c4feb04a82e966e57f3584e, type: 3}
+  - {fileID: 21300000, guid: 22de71caba2944344a3b21753724e338, type: 3}
+  - {fileID: 21300000, guid: e194ed1ba02dbe340b9e1967287dcffc, type: 3}
+  - {fileID: 21300000, guid: 9a03924cfa2bc044eb0636711b68053e, type: 3}
+  - {fileID: 21300000, guid: e58929ec602fe764eba613c6b2e28fd5, type: 3}
+  - {fileID: 21300000, guid: ffcfa10dc1e44cf41a5d372a2cdc7d0c, type: 3}
+  - {fileID: 21300000, guid: 6adef50dc3a1a854891ff7cafb4eb8e1, type: 3}
+  - {fileID: 21300000, guid: 9554135ec8a4c364681abdd559881e0e, type: 3}
+  - {fileID: 21300000, guid: 2299c9bff4e156147a72cf00ef8cc023, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Filled Circle
+  - Flag
+  - Old box
+  - Return Square Button
+  - button_triangle_right
+  - Box
+  - Pointer
+  - Coin
+  - board
+  - Magnet
+  - Box with mildew
+  - X Square Button
+  - Play Square Button
+  - Barrel
+  m_RenderDataMap: {}
+  m_Tag: Game Sprite
+  m_IsVariant: 0
