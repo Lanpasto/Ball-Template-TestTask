@@ -71,7 +71,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void AddClickPosition()
     {
-        Vector3 clickPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Vector3 clickPosition = Camera.main.ScreenToWorldPoint(touchPosition);
         clickPosition.z = 0;
 
         if (!clickPoints.ContainsKey(clickPosition))
