@@ -71,7 +71,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void AddClickPosition()
     {
-        Vector3 clickPosition = Camera.main.ScreenToWorldPoint(touchPosition);
+        Vector3 clickPosition = Camera.main.ScreenToWorldPoint(Input.GetTouch(0).position);
         clickPosition.z = 0;
 
         if (!clickPoints.ContainsKey(clickPosition))
@@ -81,6 +81,7 @@ public class PlayerMovement : MonoBehaviour
             flagManager.PutFlag(clickPosition);
         }
     }
+
 
     private void MoveToTarget(Vector3 target)
     {
